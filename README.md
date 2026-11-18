@@ -24,3 +24,7 @@ Note: Enabling Java support may require you to download and install
 components licensed under the GPL.
 
 
+
+## Fork website validation
+
+The documentation uses Docusaurus 3.10.2 and Node.js 24. Its Yarn resolutions select patched Tinypool and serialize-javascript versions, plus a patched UUID version specifically for SockJS; validate compatibility with `yarn install --frozen-lockfile` and `yarn build` from `website`. Website builds remain available in forks. Pages deployment, GitHub release creation and release-asset upload run only in `facebook/infer`.
